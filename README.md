@@ -1,30 +1,110 @@
-# Event listing page
+# Event Listing Page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A simple, clean **Event Listing web application** built using **React and Tailwind CSS**.  
+This project demonstrates core frontend concepts such as filtering, sorting, conditional rendering, and dynamic detail views using dummy data.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gtr-r34-skylines-projects/v0-event-listing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/c9D8DwDirON)
+The app is designed to simulate a **college / hackathon / conference event portal**.
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Features
 
-## Deployment
+### Event Listing
+- Displays a list of events with:
+  - Event Name
+  - Event Date
+  - Mode (Online / Offline)
+- Events are rendered using dummy data.
+- Clean card-based UI.
 
-Your project is live at:
+### Filtering
+- Filter events by:
+  - All
+  - Online
+  - Offline
+- Filtering is handled entirely on the client side.
 
-**[https://vercel.com/gtr-r34-skylines-projects/v0-event-listing-page](https://vercel.com/gtr-r34-skylines-projects/v0-event-listing-page)**
+### Schedule Sorting
+- A **Schedule button** sorts events by date in **ascending order** (earliest first).
 
-## Build your app
+### Event Details View
+- Clicking an event card opens a detailed view.
+- Shows:
+  - Event name
+  - Full date
+  - Mode (Online / Offline)
+  - Event description
+  - Agenda / schedule (dummy timeline)
 
-Continue building your app on:
+### Speakers Section
+- Each event has its own set of **dummy speakers**.
+- Speaker cards include:
+  - Name
+  - Designation
+  - Short bio
+- Speakers displayed correspond only to the selected event.
 
-**[https://v0.app/chat/c9D8DwDirON](https://v0.app/chat/c9D8DwDirON)**
+### FAQs
+- Basic FAQ section using an accordion layout.
+- Example questions:
+  - Who can participate?
+  - Is there a registration fee?
+  - Will participants receive a certificate?
+  - Is the event online or offline?
 
-## How It Works
+---
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## Tech Stack
+
+- React
+- Tailwind CSS
+- JavaScript (ES6+)
+
+---
+
+## Project Structure (High-Level)
+
+- Event list component
+- Event detail view (conditional rendering or modal)
+- Speaker cards component
+- FAQ accordion component
+- Client-side state management for:
+  - Filtering
+  - Sorting
+  - Navigation
+
+---
+
+## Constraints
+
+- No backend
+- No authentication
+- No external APIs
+- Dummy data only
+- Client-side logic only
+
+---
+
+## Use Case
+
+This project is ideal for:
+- Learning frontend UI logic
+- Demonstrating filtering and sorting
+- College-level assignments
+- Hackathon or event portal prototypes
+
+---
+
+## Future Enhancements
+
+- Search by event name
+- Pagination
+- Calendar view
+- Backend integration
+- Authentication for organizers
+
+---
+
+## License
+
+This project is for educational and demonstration purposes.
